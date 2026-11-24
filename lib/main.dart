@@ -85,31 +85,31 @@ void go(BuildContext context, Widget page) =>
     Navigator.push(context, MaterialPageRoute(builder: (_) => page));
 
 Widget _q(String text, {bool small = false}) => Padding(
-      padding: const EdgeInsets.only(bottom: 9),
-      child: Text(
-        text,
-        style: TextStyle(
-          color: AppColors.navy,
-          fontSize: small ? 14 : 18,
-          height: 1.3,
-          fontWeight: FontWeight.w700,
-        ),
-      ),
-    );
+  padding: const EdgeInsets.only(bottom: 9),
+  child: Text(
+    text,
+    style: TextStyle(
+      color: AppColors.navy,
+      fontSize: small ? 14 : 18,
+      height: 1.3,
+      fontWeight: FontWeight.w700,
+    ),
+  ),
+);
 
 Widget _step(int n) => Padding(
-      padding: const EdgeInsets.only(top: 18, bottom: 2),
-      child: Row(
-        children: [
-          const Expanded(child: Divider(color: Color(0xFFC4C4C4), height: 1)),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15),
-            child: Text(
-              '$n/4',
-              style: const TextStyle(color: AppColors.ink, fontSize: 15),
-            ),
-          ),
-          const Expanded(child: Divider(color: Color(0xFFC4C4C4), height: 1)),
-        ],
+  padding: const EdgeInsets.only(top: 18, bottom: 2),
+  child: Row(
+    children: [
+      const Expanded(child: Divider(color: Color(0xFFC4C4C4), height: 1)),
+      Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 15),
+        child: Text(
+          '$n/4',
+          style: const TextStyle(color: AppColors.ink, fontSize: 15),
+        ),
       ),
-    );
+      const Expanded(child: Divider(color: Color(0xFFC4C4C4), height: 1)),
+    ],
+  ),
+);
